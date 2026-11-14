@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio4.css">
+</head>
+<body>
+    <main>
+        <h1>Buscador de estudiantes</h1>
+        <p>Escribe el nombre completo del estudiante para consultar su ficha.</p>
+
+        <form id="formulario">
+            <label for="nombre">Nombre del estudiante:</label>
+            <input type="search" id="nombre" autocomplete="off" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <p id="mensaje" role="status" aria-live="polite"></p>
+
+        <section id="ficha" aria-labelledby="titulo-ficha" hidden>
+            <h2 id="titulo-ficha">Ficha del estudiante</h2>
+            <dl>
+                <dt>Nombre</dt>
+                <dd id="ficha-nombre"></dd>
+                <dt>Edad</dt>
+                <dd id="ficha-edad"></dd>
+                <dt>Curso</dt>
+                <dd id="ficha-curso"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <script src="js/ejercicio4.js"></script>
+</body>
+</html>
